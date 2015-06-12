@@ -7,7 +7,7 @@ class PizzaPlate
   end
 
   def pizza_fits
-    if (pizza_side ** 2) + (pizza_side ** 2) <= (plate_diameter ** 2)
+    if pizza_side.abs2 + pizza_side.abs2 <= plate_diameter.abs2
       p "Your pizza fits on the plate!"
     else
       p "Your pizza does not fit."
